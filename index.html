@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bank</title>
+    <!-- Bootstrap core CSS -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+            <div class="tag">ສະແກນຜ່ານ QR ດ້ານລ່າງໄດ້</div>
+          
+    <div class="img">
+<a href="https://drive.google.com/uc?id=1KAv5bbTtKujeIy2leseXC-J-aJY-Dsip" target="_blank">
+<img class="qr" src="img/Qr Maiphan.jpg" alt="My QR"></a>
+          
+      </div>
+            <div class="content">
+                <ul class="list-group">
+                    <div class="list-group-item-danger list-group-item d-flex justify-content-between align-items-center">
+                        ທະນາຄານ
+                        <span>
+                            ການຄ້າຕ່າງປະເທດລາວ (LAK)
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        ຊື່ບັນຊີ
+                        <span>
+                            MAIPHAN VANNASUK M
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        ເລກບັນຊີ
+                        <span>
+                            170120001967388001 LAK
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <input type="text" value="170120001582383001" id="bcelNumber" hidden="">
+                        <button onclick="copyBCELLAK(&#39;170120001967388001&#39;)" class="btn-block btn-danger btn-lg" data-toggle="tooltip" data-placement="top" title="ຄັດລອກ">
+                            ຄັດລອກເລກບັນຊີ LAK
+                        </button>
+                    </div> 
+                    <center>
+                    <div id="bcellakCopied" class="alert alert-success" hidden="" role="alert">
+                        ຄັດລອກເລກບັນຊີ LAK ສຳເຫຼັດ
+                    </div>
+                    </center>
+                </ul>
+              
+              <ul class="list-group">
+                    <div class="list-group-item-danger1 list-group-item d-flex justify-content-between align-items-center">
+                        ທະນາຄານ
+                        <span>
+                            ການຄ້າຕ່າງປະເທດລາວ (THB)
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        ຊື່ບັນຊີ
+                        <span>
+                            MAIPHAN VANNASUK M
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        ເລກບັນຊີ
+                        <span>
+                            171120201967388001 THB
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <input type="text" value="171120201967388001" id="bcelNumber" hidden="">
+                        <button onclick="copyBCELTHB(&#39;171120201967388001&#39;)" class="btn-block btn-danger1 btn-lg" data-toggle="tooltip" data-placement="top" title="ຄັດລອກ">
+                            ຄັດລອກເລກບັນຊີ THB
+                        </button>
+                    </div> 
+                    <center>
+                    <div id="bcelthbCopied" class="alert alert-success" hidden="" role="alert">
+                        ຄັດລອກເລກບັນຊີ THB ສຳເຫຼັດ
+                    </div>
+                    </center>
+                </ul>
+              
+              
+              <ul class="list-group">
+                    <div class="list-group-item-danger list-group-item d-flex justify-content-between align-items-center">
+                        ທະນາຄານ
+                        <span>
+                            ການຄ້າຕ່າງປະເທດລາວ (USD)
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        ຊື່ບັນຊີ
+                        <span>
+                            MAIPHAN VANNASUK M
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        ເລກບັນຊີ
+                        <span>
+                            171120101582383001 USD
+                        </span>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <input type="text" value="171120101582383001" id="bcelNumber" hidden="">
+                        <button onclick="copyBCELUSD(&#39;171120101967388001&#39;)" class="btn-block btn-danger2 btn-lg" data-toggle="tooltip" data-placement="top" title="ຄັດລອກ">
+                            ຄັດລອກເລກບັນຊີ USD
+                        </button>
+                    </div> 
+                    <center>
+                    <div id="bcelusdCopied" class="alert alert-success" hidden="" role="alert">
+                        ຄັດລອກເລກບັນຊີ USD ສຳເຫຼັດ
+                    </div>
+                    </center>
+                </ul>
+              
+              
+              
+            </div>
+    
+            <div class="button">
+                <a href="https://play.google.com/store/apps/details?id=com.bcel.bcelone"  target="_blank"><button class="btn-l">ໂຫຼດແອັບ BCEL One</button>
+                <a href="onepay://qr/00020101021138670016A00526628466257701082771041802030010324IAFPBPCZWZYYDCMIBYNBWOEV53034185802LA6304EDE9"><button class="btn-r">ໂອນເງິນຜ່ານ BCEL One</button>
+            </div>
+        </div>
+   
+
+
+    <script>
+    function copyBCELLAK(val) {
+        const selBox = document.createElement('textarea');
+        selBox.style.position = 'fixed';
+        selBox.style.left = '0';
+        selBox.style.top = '0';
+        selBox.style.opacity = '0';
+        selBox.value = val;
+        document.body.appendChild(selBox);
+        selBox.focus();
+        selBox.select();
+        document.execCommand('copy');
+        document.body.removeChild(selBox);
+        document.getElementById('bcellakCopied').hidden = false;
+        setTimeout(function(){
+            document.getElementById('bcellakCopied').hidden = true;
+        }, 3000);
+    }
+   
+      function copyBCELTHB(val) {
+        const selBox = document.createElement('textarea');
+        selBox.style.position = 'fixed';
+        selBox.style.left = '0';
+        selBox.style.top = '0';
+        selBox.style.opacity = '0';
+        selBox.value = val;
+        document.body.appendChild(selBox);
+        selBox.focus();
+        selBox.select();
+        document.execCommand('copy');
+        document.body.removeChild(selBox);
+        document.getElementById('bcelthbCopied').hidden = false;
+        setTimeout(function(){
+            document.getElementById('bcelthbCopied').hidden = true;
+        }, 3000);
+    }
+   
+      
+      function copyBCELUSD(val) {
+        const selBox = document.createElement('textarea');
+        selBox.style.position = 'fixed';
+        selBox.style.left = '0';
+        selBox.style.top = '0';
+        selBox.style.opacity = '0';
+        selBox.value = val;
+        document.body.appendChild(selBox);
+        selBox.focus();
+        selBox.select();
+        document.execCommand('copy');
+        document.body.removeChild(selBox);
+        document.getElementById('bcelusdCopied').hidden = false;
+        setTimeout(function(){
+            document.getElementById('bcelusdCopied').hidden = true;
+        }, 3000);
+    }
+   
+      
+</script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://drive.google.com/uc?id=1KP7v0NSzHUxLwsgU0iIg0azGnNfIJ6iz"></script>
+<script src="https://drive.google.com/uc?id=1Muz3C2V-pM0A7TKsGJ_4ac2xCjP1qYCb"></script>
+
+  </body>
+</html>
